@@ -1,4 +1,5 @@
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 import Login from './pages/login/login.component';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <Login />
+      <Footer />
     </div>
   );
 }
