@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
     border-bottom: 2px #fff solid;
     padding: 20px 15px;
+    background:none;
 `
 
 export const Logo = styled.a`

@@ -4,7 +4,7 @@ export const Form = styled.form`
     border: 1px #fff solid;
     padding: 30px 20px;
     max-width: 250px;
-    margin: 150px  auto;
+    margin: 250px  auto;
 `
 
 export const H2 = styled.h2`
