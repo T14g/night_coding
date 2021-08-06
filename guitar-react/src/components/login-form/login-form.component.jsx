@@ -1,14 +1,14 @@
 import React from 'react';
+import CustomButton from '../custom-button/custom-button.component';
+
 import { Form, Input, H2, Button } from './login-form.styles';
 
 const LoginForm = () => {
 
     return (
         <Form>
-            <H2>Login Form</H2>
-            <Input type="email" placeholder="email" />
-            <Input type="password" placeholder="password" />
-            <Button>Login</Button>
+            <CustomButton title="Login" type="solid"/>
+            <CustomButton title="Register" type="solid"/>
         </Form>
     );
 }

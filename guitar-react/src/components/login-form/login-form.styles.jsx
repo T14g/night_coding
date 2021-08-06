@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const Form = styled.form`
-    border: 1px #fff solid;
-    padding: 30px 20px;
-    max-width: 250px;
+    box-shadow: 5px 5px 26px 12px rgba(108,105,105,0.75);
+    padding: 100px 20px;
+    max-width: 350px;
     margin: 250px  auto;
+    background: #fff;
 `
 
 export const H2 = styled.h2`
@@ -16,8 +17,8 @@ export const H2 = styled.h2`
 export const Input = styled.input`
     display: block;
     background: none;
-    border: 1px #fff solid;
-    color: #fff;
+    border: 1px #000 solid;
+    color: #000;
     margin-bottom: 10px;
     width: 100%;
     max-width: 200px;
@@ -25,15 +26,15 @@ export const Input = styled.input`
     padding: 10px 8px;
 
     &::placeholder{
-        color: #fff;
+        color: #000;
 
     }
 `
 
 export const Button = styled.button`
     background: #000;
-    color: #fff;
-    border: 2px #fff solid;
+    color: #000;
+    border: 2px #000 solid;
     display: block;
     padding: 10px;
     margin: 0 auto;
