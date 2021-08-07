@@ -7,8 +7,10 @@ const LoginForm = () => {
 
     return (
         <Form>
-            <CustomButton title="Login" type="solid"/>
-            <CustomButton title="Register" type="solid"/>
+            <Input placeholder="Email" type="email" />
+            <Input placeholder="Password" type="password" />
+            <CustomButton title="Login" type="solid" color="#000" background="#fff" />
+            <CustomButton title="Register" type="solid" color="#000" background="#fff" />
         </Form>
     );
 }

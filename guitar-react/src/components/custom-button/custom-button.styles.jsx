@@ -11,7 +11,7 @@ export const SolidButton = styled.button`
     padding: 8px 15px;
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
 
     &:hover{
         cursor: pointer;

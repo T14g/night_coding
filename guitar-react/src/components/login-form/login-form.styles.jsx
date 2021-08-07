@@ -3,9 +3,10 @@ import styled from 'styled-components'
 export const Form = styled.form`
     box-shadow: 5px 5px 26px 12px rgba(108,105,105,0.75);
     padding: 100px 20px;
-    max-width: 350px;
+    max-width: 400px;
     margin: 250px  auto;
-    background: #fff;
+    background: none;
+    border: 3px #fff solid;
 `
 
 export const H2 = styled.h2`
@@ -17,17 +18,21 @@ export const H2 = styled.h2`
 export const Input = styled.input`
     display: block;
     background: none;
-    border: 1px #000 solid;
+    border: 2px #fff solid;
     color: #000;
-    margin-bottom: 10px;
     width: 100%;
-    max-width: 200px;
-    margin: 0 auto 10px;
-    padding: 10px 8px;
+    max-width: 273px;
+    margin: 0 auto 20px;
+    padding: 15px 10px;
+    font-size:14px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
 
     &::placeholder{
-        color: #000;
-
+        color: #fff;
+        font-size: 14px;
     }
 `
 

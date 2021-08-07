@@ -1,16 +1,23 @@
 import React from 'react';
 import { SolidButton } from './custom-button.styles'
 
-const CustomButton = ({title, type}) => {
+const CustomButton = ({ title, type, color, background }) => {
 
     const renderHelper = () => {
-        switch(type){
+        switch (type) {
             case 'solid':
-                return <SolidButton>{title}</SolidButton>;
-                
+                return (
+                    <SolidButton
+                        color={color}
+                        background={background}
+                    >
+                        {title}
+                    </SolidButton>
+                );
+
             case 'bordered':
-            
-            
+
+
         }
     }
 
