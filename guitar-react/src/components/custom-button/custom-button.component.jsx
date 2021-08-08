@@ -1,7 +1,7 @@
 import React from 'react';
 import { SolidButton } from './custom-button.styles'
 
-const CustomButton = ({ title, type, color, background }) => {
+const CustomButton = ({ title, type, color, background, handleClick }) => {
 
     const renderHelper = () => {
         switch (type) {
@@ -10,6 +10,7 @@ const CustomButton = ({ title, type, color, background }) => {
                     <SolidButton
                         color={color}
                         background={background}
+                        onClick={handleClick}
                     >
                         {title}
                     </SolidButton>
