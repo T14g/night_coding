@@ -11,7 +11,7 @@ const Login = () => {
         <Row>
             <Column width={70} background={backgroundImg} >
                 <BigTitle>
-                    Are you Ready for <br/> Rock N' Roll?
+                    Are you Ready for <br /> Rock N' Roll?
                 </BigTitle>
             </Column>
 
