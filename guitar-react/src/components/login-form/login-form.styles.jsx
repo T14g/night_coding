@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Form = styled.form`
+export const Form = styled.div`
     box-shadow: 5px 5px 26px 12px rgba(108,105,105,0.75);
     padding: 50px 20px;
     max-width: 400px;

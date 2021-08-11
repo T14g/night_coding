@@ -2,19 +2,40 @@ import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import Login from './pages/login/login.component';
 
+import { UserContext } from './contexts/user-context';
+
 import './App.css';
 import React from 'react';
 
 class App extends React.Component {
 
+  constructor() {
+    super();
+
+    this.handleLogin = (user) => {
+      this.setState({
+        logged: 'usuario logado!'
+      })
+    }
+
+    this.state = {
+      logged: 'nao logado',
+      handleLogin: this.handleLogin
+    };
+
+
+  }
+
   render() {
 
     return (
-      <div className="App">
-        <Header />
-        <Login />
-        <Footer />
-      </div>
+      <UserContext.Provider value={this.state} >
+        <div className="App">
+          <Header />
+          <Login />
+          <Footer />
+        </div>
+      </UserContext.Provider>
     )
   }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomButton from '../custom-button/custom-button.component';
-
+import { UserContext } from '../../contexts/user-context';
 import { Form, Input, H2, Button } from './login-form.styles';
 
 class LoginForm extends React.Component {
@@ -26,33 +26,37 @@ class LoginForm extends React.Component {
                             type="solid" color="#000"
                             background="#fff" />
 
-                            <CustomButton
-                                handleClick={this.handlLogin}
-                                title="Login"
-                                type="solid" color="#000"
-                                background="#fff"
-                            />
+                        <CustomButton
+                            handleClick={this.showLogin}
+                            title="Login"
+                            type="solid" color="#000"
+                            background="#fff"
+                        />
                     </React.Fragment>
                 )
 
             case 'login':
                 return (
-                    <React.Fragment>
-                        <Input placeholder="Email" type="email" />
-                        <Input placeholder="Password" type="password" />
-                        <CustomButton
-                                handleClick={this.loginAction}
-                                title="Log me IN!"
-                                type="solid" color="#000"
-                                background="#fff"
-                        />
+                    <UserContext.Consumer>
+                        {({ handleLogin }) => (
+                            <React.Fragment>
+                                <Input placeholder="Email" type="email" />
+                                <Input placeholder="Password" type="password" />
+                                <CustomButton
+                                    handleClick={handleLogin}
+                                    title="Log me IN!"
+                                    type="solid" color="#000"
+                                    background="#fff"
+                                />
 
-                        <CustomButton
-                            handleClick={this.handleRegister}
-                            title="Register"
-                            type="solid" color="#000"
-                            background="#fff" />
-                    </React.Fragment>
+                                <CustomButton
+                                    handleClick={this.handleRegister}
+                                    title="Register"
+                                    type="solid" color="#000"
+                                    background="#fff" />
+                            </React.Fragment>
+                        )}
+                    </UserContext.Consumer>
                 )
         }
     }
@@ -62,7 +66,7 @@ class LoginForm extends React.Component {
         this.setState({ showing: 'register' });
     }
 
-    handlLogin = (e) => {
+    showLogin = (e) => {
         e.preventDefault();
         this.setState({ showing: 'login' });
     }

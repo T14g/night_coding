@@ -12,5 +12,9 @@ export const Logo = styled.a`
     font-weight: 900;
 `
 export const Username = styled.span`
+    float: right;
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;
 
 `
