@@ -18,3 +18,12 @@ export const Username = styled.span`
     text-transform: uppercase;
 
 `
+
+export const HeaderTimer = styled.span`
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translatex(-50%);
+    text-transform: uppercase;
+`
