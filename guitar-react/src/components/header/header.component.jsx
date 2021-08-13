@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeaderContainer, Logo, Username, HeaderTimer } from './header.styles';
 import { UserContext } from '../../contexts/user-context';
+import CustomButton from '../../components/custom-button/custom-button.component';
 
 const Header = () => {
 
@@ -8,7 +9,7 @@ const Header = () => {
         <HeaderContainer>
             <Logo>Guitar React</Logo>
             <UserContext.Consumer>
-                {({ logged }) => (
+                {({ logged, handleLogout }) => (
                     <React.Fragment>
                         {
                             logged === 'usuario logado!' ? (

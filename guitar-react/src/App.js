@@ -1,6 +1,7 @@
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import Login from './pages/login/login.component';
+import Home from './pages/home/home.component';
 
 import { UserContext } from './contexts/user-context';
 
@@ -18,12 +19,27 @@ class App extends React.Component {
       })
     }
 
+    this.handleLogout = (user) => {
+      this.setState({
+        logged: 'nao logado'
+      })
+    }
+
     this.state = {
       logged: 'nao logado',
       handleLogin: this.handleLogin
     };
+  }
 
+  renderHelper = () => {
+    const { logged } = this.state;
+    switch (logged) {
+      case 'nao logado':
+        return <Login />;
 
+      case 'usuario logado!':
+        return <Home />;
+    }
   }
 
   render() {
@@ -32,7 +48,7 @@ class App extends React.Component {
       <UserContext.Provider value={this.state} >
         <div className="App">
           <Header />
-          <Login />
+          {this.renderHelper()}
           <Footer />
         </div>
       </UserContext.Provider>
