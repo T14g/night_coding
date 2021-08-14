@@ -16,4 +16,12 @@ export const SolidButton = styled.button`
     &:hover{
         cursor: pointer;
     }
+
+    &.float-right{
+        float:right;
+    }
+
+    &.mb-0{
+        margin-bottom: 0;
+    }
 `

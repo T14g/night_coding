@@ -19,15 +19,18 @@ class App extends React.Component {
       })
     }
 
-    this.handleLogout = (user) => {
+    this.handleLogout = () => {
+
       this.setState({
         logged: 'nao logado'
       })
+
     }
 
     this.state = {
       logged: 'nao logado',
-      handleLogin: this.handleLogin
+      handleLogin: this.handleLogin,
+      handleLogout: this.handleLogout
     };
   }
 

@@ -4,12 +4,19 @@ export const HeaderContainer = styled.header`
     border-bottom: 2px #fff solid;
     padding: 20px 15px;
     background:none;
+
+    &:after{
+        display: table;
+        clear: both;
+        content: "";
+    }
 `
 
 export const Logo = styled.a`
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 900;
+    line-height: 45px;
 `
 
 export const Username = styled.span`
@@ -27,4 +34,5 @@ export const HeaderTimer = styled.span`
     top: 25px;
     transform: translatex(-50%);
     text-transform: uppercase;
+    line-height: 45px;
 `

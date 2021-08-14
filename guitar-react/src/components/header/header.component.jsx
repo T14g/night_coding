@@ -13,12 +13,23 @@ const Header = () => {
                     <React.Fragment>
                         {
                             logged === 'usuario logado!' ? (
-                                <HeaderTimer>
-                                    Você já tocou por 300h:00m:00s!
-                                </HeaderTimer>
+                                <React.Fragment>
+
+                                    <HeaderTimer>
+                                        Você já tocou por 300h:00m:00s!
+                                    </HeaderTimer>
+
+                                    <CustomButton
+                                    handleClick={handleLogout}
+                                    customClass="float-right mb-0"
+                                    title="Logout"
+                                    type="solid" color="#000"
+                                    background="#fff" />
+
+                                </React.Fragment>
+                                
                             ) : null
                         }
-                        <Username>{logged}</Username>
                     </React.Fragment>
                 )}
             </UserContext.Consumer>
