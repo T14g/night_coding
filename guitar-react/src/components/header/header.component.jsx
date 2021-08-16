@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderContainer, Logo, Username, HeaderTimer } from './header.styles';
+import { HeaderContainer, Logo, MenuHamburguerBar, MenuHamburguerBox, HeaderTimer } from './header.styles';
 import { UserContext } from '../../contexts/user-context';
 import { SidebarContext } from '../../contexts/sidebar-context';
 import CustomButton from '../../components/custom-button/custom-button.component';
@@ -10,18 +10,18 @@ const Header = () => {
         <HeaderContainer>
             <Logo>Guitar React</Logo>
             <SidebarContext.Consumer>
-                {({toggle}) => (
+                {({ toggle }) => (
                     <UserContext.Consumer>
                         {({ logged, handleLogout }) => (
                             <React.Fragment>
                                 {
                                     logged === 'usuario logado!' ? (
                                         <React.Fragment>
-        
+
                                             <HeaderTimer>
                                                 Você já tocou por 300h:00m:00s!
                                             </HeaderTimer>
-        
+
                                             {/* <CustomButton
                                                 handleClick={handleLogout}
                                                 customClass="float-right mb-0"
@@ -29,15 +29,14 @@ const Header = () => {
                                                 type="solid" color="#000"
                                                 background="#fff" /> */}
 
-                                            <CustomButton
-                                                handleClick={toggle}
-                                                customClass="float-right mb-0"
-                                                title="Show Menu"
-                                                type="solid" color="#000"
-                                                background="#fff" />
-        
+                                            <MenuHamburguerBox onClick={toggle}>
+                                                <MenuHamburguerBar />
+                                                <MenuHamburguerBar />
+                                                <MenuHamburguerBar />
+                                            </MenuHamburguerBox>
+
                                         </React.Fragment>
-        
+
                                     ) : null
                                 }
                             </React.Fragment>

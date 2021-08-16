@@ -27,12 +27,34 @@ export const Username = styled.span`
 
 `
 
-export const HeaderTimer = styled.span`
-    display: block;
+export const HeaderTimer = styled.div`
     position: absolute;
     left: 50%;
     top: 25px;
     transform: translatex(-50%);
     text-transform: uppercase;
     line-height: 45px;
+`
+
+export const MenuHamburguerBox = styled.div`
+    width: 50px;
+    height: 50px;
+    border: 2px #fff solid;
+    float: right;
+    
+    &:hover{
+        cursor: pointer;
+    }
+`
+
+export const MenuHamburguerBar = styled.div`
+    background: #fff;
+    width: 30px;
+    height: 5px;
+    margin: 8px auto;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
 `
