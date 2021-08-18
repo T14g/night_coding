@@ -30,10 +30,14 @@ export const Username = styled.span`
 export const HeaderTimer = styled.div`
     position: absolute;
     left: 50%;
-    top: 25px;
+    top: 20px;
     transform: translatex(-50%);
     text-transform: uppercase;
     line-height: 45px;
+    background: #ffff;
+    color: #000;
+    padding: 5px 15px;
+    font-weight: 800;
 `
 
 export const MenuHamburguerBox = styled.div`
