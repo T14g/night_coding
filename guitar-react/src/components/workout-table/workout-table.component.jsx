@@ -1,75 +1,148 @@
 import React from 'react';
 
-import { Table, Column, ColumnBlock } from './workout-table.styles';
+import { 
+    Table, 
+    Column, 
+    ColumnBlock, 
+    TextBlock, 
+    TableTitle, 
+    Row 
+} from './workout-table.styles';
 
 const WorkoutTable = () => {
 
     return (
         <Table>
-            
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+            <TableTitle>Treino da semana</TableTitle>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+            <Row>
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
 
-            <Column>
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-                <ColumnBlock />
-            </Column>
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
+
+                <Column>
+                    <ColumnBlock>
+                        <TextBlock>Scales</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Chords</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Tabs</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Freestyle</TextBlock>
+                    </ColumnBlock>
+                    <ColumnBlock>
+                        <TextBlock>Theory</TextBlock>
+                    </ColumnBlock>
+                </Column>
+            </Row>
 
         </Table>
     );
